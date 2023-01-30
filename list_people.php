@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
         }
     }else{
         if($row["age"]>=15){
-            if($row["marry_status"]=="M"){
+            if($row["marry_status"]=="F"){
                 echo "นาง".$row["fname"]." ".$row["lname"]." <a href='edit_people.php?id=".$row["id"]."'>Edit</a><br>";
             }else{
                 echo "น.ส.".$row["fname"]." ".$row["lname"]." <a href='edit_people.php?id=".$row["id"]."'>Edit</a><br>";
